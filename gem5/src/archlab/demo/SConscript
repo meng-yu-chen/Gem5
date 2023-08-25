@@ -1,0 +1,9 @@
+Import('*')
+
+#Register the SimObject and C++ file
+
+Source('simple_pe.cc')
+
+DebugFlag('SimplePE')
+
+SimObject('simple_pe.py', sim_objects=['SimplePE'])
